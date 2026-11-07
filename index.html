@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carla Achury · Quality & AI Governance</title>
+<meta name="description" content="Carla Achury: test process assessment (TMMi, TPI NEXT), QA leadership and AI governance for product teams. Santiago, Chile.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f4c4a'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' fill='%23fff' text-anchor='middle'%3ECA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfaf7;--surface:#ffffff;--ink:#16302f;--muted:#5b6b69;--line:#e3e8e6;--teal:#0f4c4a;--teal-soft:#e8f0ef;--coral:#d9573a;--amber:#b7791f;--red:#b42318;--shadow:0 1px 2px rgba(16,40,38,.06),0 8px 24px rgba(16,40,38,.06)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1716;--surface:#142120;--ink:#e6efed;--muted:#9fb2af;--line:#24403d;--teal:#5fb8ad;--teal-soft:#16302e;--coral:#f08a6f;--amber:#e0ad5c;--red:#f07b6b;--shadow:none}}
+:root[data-theme="dark"]{--bg:#0e1716;--surface:#142120;--ink:#e6efed;--muted:#9fb2af;--line:#24403d;--teal:#5fb8ad;--teal-soft:#16302e;--coral:#f08a6f;--amber:#e0ad5c;--red:#f07b6b;--shadow:none}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--teal)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+html[lang="en"] .es, html[lang="es"] .en{display:none!important}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:20px;height:60px}
+.brand{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:19px;color:var(--ink);text-decoration:none;margin-right:auto}
+.links{display:flex;gap:18px}
+.links a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+.links a:hover{color:var(--ink)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:transparent;color:var(--muted);font:600 12px Inter,sans-serif;padding:6px 11px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--teal);color:var(--bg)}
+header{padding:88px 0 56px}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--coral);margin:0 0 18px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(34px,5.4vw,58px);line-height:1.08;letter-spacing:-.015em;margin:0 0 22px;max-width:20ch}
+.lede{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:60ch;margin:0 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--teal)}
+.btn.primary{background:var(--teal);color:var(--bg)}
+.btn.ghost{color:var(--teal)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:56px 0 0}
+.stat{background:var(--surface);padding:22px}
+.stat b{display:block;font-family:Fraunces,Georgia,serif;font-size:34px;font-weight:600;color:var(--teal);line-height:1.1}
+.stat span{font-size:13.5px;color:var(--muted)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(26px,3.4vw,36px);line-height:1.15;margin:0 0 12px;letter-spacing:-.01em}
+.sub{color:var(--muted);max-width:62ch;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+@media (max-width:820px){.grid.two{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card h3{margin:10px 0 8px;font-size:18px;line-height:1.3}
+.card p{margin:0 0 16px;color:var(--muted);font-size:15px}
+.card .more{margin-top:auto;font-weight:600;font-size:14px;text-decoration:none}
+.tag{align-self:flex-start;display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--teal-soft);color:var(--teal)}
+.tag.coral{color:var(--coral);background:color-mix(in srgb,var(--coral) 12%,transparent)}
+.tag.red{color:var(--red);background:color-mix(in srgb,var(--red) 12%,transparent)}
+.tag.amber{color:var(--amber);background:color-mix(in srgb,var(--amber) 14%,transparent)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
+.chips span{font-size:12px;border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{border-top:3px solid var(--teal);padding-top:16px}
+.step:nth-child(2){border-color:var(--coral)}.step:nth-child(3){border-color:var(--amber)}.step:nth-child(4){border-color:var(--red)}
+.step h3{margin:0 0 6px;font-size:17px}
+.step p{margin:0;color:var(--muted);font-size:15px}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
+.timeline .when{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+.timeline b{display:block}
+.timeline span{color:var(--muted);font-size:15px}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.creds span{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:14px}
+.contact{background:var(--teal);color:var(--bg);border-radius:20px;padding:48px;display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
+.contact h2{color:var(--bg)}
+.contact p{opacity:.85;margin:0}
+.contact .btn{background:var(--bg);color:var(--teal);border-color:var(--bg);margin:0 8px 8px 0}
+footer{padding:36px 0 56px;color:var(--muted);font-size:13px}
+@media (max-width:820px){.links{display:none}.stats{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr;padding:32px}}
+@media (max-width:520px){.wrap{padding:0 16px}header{padding:56px 0 40px}.steps{grid-template-columns:1fr}.timeline li{grid-template-columns:1fr;gap:4px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#top">Carla Achury</a>
+  <div class="links">
+    <a href="#practice"><span class="en">Practice</span><span class="es">Servicios</span></a>
+    <a href="#work"><span class="en">Work</span><span class="es">Trabajo</span></a>
+    <a href="#approach"><span class="en">Approach</span><span class="es">Enfoque</span></a>
+    <a href="#about"><span class="en">About</span><span class="es">Trayectoria</span></a>
+    <a href="#contact"><span class="en">Contact</span><span class="es">Contacto</span></a>
+  </div>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang="es" aria-pressed="false">ES</button>
+  </div>
+</div></nav>
+
+<main id="top">
+<header><div class="wrap">
+  <p class="eyebrow"><span class="en">Quality &amp; AI Governance · Santiago, Chile</span><span class="es">Calidad y Gobierno de IA · Santiago, Chile</span></p>
+  <h1><span class="en">Know how good your testing really is.</span><span class="es">Sepa qué tan buenas son realmente sus pruebas.</span></h1>
+  <p class="lede"><span class="en">I assess test processes with TMMi and TPI NEXT, turn the findings into a roadmap the business will feel, and set up the governance that AI features need. Eight years building quality in SaaS products, from startups to corporate quality departments.</span><span class="es">Evalúo procesos de prueba con TMMi y TPI NEXT, convierto los hallazgos en una hoja de ruta que el negocio va a notar e instalo el gobierno que necesitan las funcionalidades con IA. Ocho años construyendo calidad en productos SaaS, desde startups hasta áreas de calidad corporativas.</span></p>
+  <div class="cta">
+    <a class="btn primary" href="#work"><span class="en">See the work</span><span class="es">Ver el trabajo</span></a>
+    <a class="btn ghost" href="#contact"><span class="en">Get in touch</span><span class="es">Conversemos</span></a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>8+</b><span class="en">years in SaaS quality</span><span class="es">años de calidad en SaaS</span></div>
+    <div class="stat"><b>60%</b><span class="en">fewer support tickets after building a QA function</span><span class="es">menos tickets de soporte tras crear una función de QA</span></div>
+    <div class="stat"><b>≤5%</b><span class="en">defect leakage on new development</span><span class="es">de defect leakage en desarrollos nuevos</span></div>
+    <div class="stat"><b>10</b><span class="en">startups assessed with TMMi in my research</span><span class="es">startups evaluadas con TMMi en mi investigación</span></div>
+  </div>
+</div></header>
+
+<section id="practice"><div class="wrap">
+  <h2><span class="en">Practice areas</span><span class="es">Áreas de práctica</span></h2>
+  <p class="sub"><span class="en">Each area has an open repository with the method, templates and examples I use.</span><span class="es">Cada área tiene un repositorio abierto con el método, las plantillas y los ejemplos que uso.</span></p>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">Assessment</span>
+      <h3><span class="en">Test process assessment</span><span class="es">Assessment del proceso de pruebas</span></h3>
+      <p><span class="en">Where your testing really stands, what to fix first and how to know it worked. Evidence from documents, interviews and workshops; a roadmap tied to business drivers.</span><span class="es">Dónde están realmente sus pruebas, qué arreglar primero y cómo saber si funcionó. Evidencia de documentos, entrevistas y workshops; una hoja de ruta ligada a los business drivers.</span></p>
+      <div class="chips"><span>TMMi</span><span>TPI NEXT</span><span>KPIs</span></div>
+      <a class="more" href="https://github.com/ckachury/test-process-assessment">test-process-assessment →</a>
+    </article>
+    <article class="card">
+      <span class="tag red"><span class="en">AI governance</span><span class="es">Gobierno de IA</span></span>
+      <h3><span class="en">AI quality &amp; governance</span><span class="es">Calidad y gobierno de IA</span></h3>
+      <p><span class="en">Every risk traced to a decision: policy rules, controls, LLM tests, evidence and a release gate that an average score cannot fool.</span><span class="es">Cada riesgo trazado hasta una decisión: reglas de política, controles, pruebas de LLM, evidencia y un release gate que un buen promedio no puede engañar.</span></p>
+      <div class="chips"><span>NIST AI RMF</span><span>ISO/IEC 42001</span><span>OWASP LLM</span></div>
+      <a class="more" href="https://github.com/ckachury/ai-quality-governance">ai-quality-governance →</a>
+    </article>
+    <article class="card">
+      <span class="tag"><span class="en">QA leadership</span><span class="es">Liderazgo QA</span></span>
+      <h3><span class="en">QA strategy &amp; release governance</span><span class="es">Estrategia QA y gobierno de releases</span></h3>
+      <p><span class="en">Risk-based test strategy, requirements review before code, quality gates, go/no-go decisions and metrics that change decisions.</span><span class="es">Estrategia de pruebas basada en riesgo, revisión de requisitos antes del código, quality gates, decisiones de go/no-go y métricas que cambian decisiones.</span></p>
+      <div class="chips"><span>ISTQB</span><span>Risk-based testing</span><span>Metrics</span></div>
+      <a class="more" href="https://github.com/ckachury/qa-strategy-playbook">qa-strategy-playbook →</a>
+    </article>
+    <article class="card">
+      <span class="tag amber">Startups</span>
+      <h3><span class="en">Lean quality for startups</span><span class="es">Calidad lean para startups</span></h3>
+      <p><span class="en">Quality as a growth enabler: business-driven goals, a risk-first matrix, a quality loop inside the sprint and a roadmap that grows with the company.</span><span class="es">La calidad como habilitador del crecimiento: objetivos ligados al negocio, matriz de riesgo, un ciclo de calidad dentro del sprint y una hoja de ruta que crece con la empresa.</span></p>
+      <div class="chips"><span>GQM</span><span>LQF-S</span><span>Research</span></div>
+      <a class="more" href="https://github.com/ckachury/lean-quality-framework">lean-quality-framework →</a>
+    </article>
+    <article class="card">
+      <span class="tag coral"><span class="en">Facilitation</span><span class="es">Facilitación</span></span>
+      <h3><span class="en">Workshops that people actually join</span><span class="es">Workshops donde la gente participa de verdad</span></h3>
+      <p><span class="en">Liberating Structures for assessments, risk discovery and blameless retrospectives. Everyone thinks first, then pairs, then groups.</span><span class="es">Estructuras Liberadoras para assessments, levantamiento de riesgos y retrospectivas sin culpables. Cada persona piensa primero, luego en pareja, luego en grupo.</span></p>
+      <div class="chips"><span>1-2-4-All</span><span>TRIZ</span><span>Ecocycle</span></div>
+      <a class="more" href="https://github.com/ckachury/liberating-structures-for-quality">liberating-structures-for-quality →</a>
+    </article>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2><span class="en">Selected work</span><span class="es">Trabajo seleccionado</span></h2>
+  <p class="sub"><span class="en">Samples built for this portfolio. Client work stays confidential; these show the method with fictional or academic cases.</span><span class="es">Muestras construidas para este portafolio. El trabajo con clientes es confidencial; estas muestran el método con casos ficticios o académicos.</span></p>
+  <div class="grid two">
+    <article class="card">
+      <span class="tag"><span class="en">Test strategy</span><span class="es">Estrategia de pruebas</span></span>
+      <h3><span class="en">From requirement to release decision</span><span class="es">Del requerimiento a la decisión de release</span></h3>
+      <p><span class="en">A churn-reduction feature for a fictional gym SaaS: nine questions for the team, a decision table, 22 prioritised test cases across web, mobile and API, and three release metrics.</span><span class="es">Una funcionalidad para reducir cancelaciones en un SaaS de gimnasios ficticio: nueve preguntas para el equipo, una tabla de decisión, 22 casos priorizados en web, móvil y API, y tres métricas de release.</span></p>
+      <a class="more" href="https://github.com/ckachury/qa-strategy-playbook/blob/main/samples/06-test-strategy-plan-cases-winback.pdf">PDF →</a>
+    </article>
+    <article class="card">
+      <span class="tag red"><span class="en">GenAI</span><span class="es">IA generativa</span></span>
+      <h3><span class="en">Test strategy for generative AI features</span><span class="es">Estrategia de pruebas para IA generativa</span></h3>
+      <p><span class="en">Quality attributes, ground-truth and adversarial test sets, high-risk scenarios and a per-release plan for LLM-based assistants.</span><span class="es">Atributos de calidad, sets de ground truth y adversariales, escenarios de alto riesgo y un plan por release para asistentes basados en LLM.</span></p>
+      <a class="more" href="https://github.com/ckachury/ai-quality-governance/blob/main/samples/genai-test-strategy-framework.pdf">PDF →</a>
+    </article>
+    <article class="card">
+      <span class="tag amber"><span class="en">Research</span><span class="es">Investigación</span></span>
+      <h3><span class="en">QA maturity of 10 tech startups</span><span class="es">Madurez QA de 10 startups tecnológicas</span></h3>
+      <p><span class="en">A TMMi diagnosis by growth stage: maturity between levels 2 and 3, measurement as the main gap, and a service model built from the findings.</span><span class="es">Un diagnóstico TMMi por etapa de crecimiento: madurez entre los niveles 2 y 3, la medición como principal brecha y un modelo de servicio construido a partir de los hallazgos.</span></p>
+      <a class="more" href="https://github.com/ckachury/lean-quality-framework/blob/main/samples/qa-maturity-assessment-tmmi.pdf">PDF →</a>
+    </article>
+    <article class="card">
+      <span class="tag coral"><span class="en">Facilitation</span><span class="es">Facilitación</span></span>
+      <h3><span class="en">Four assessment workshops</span><span class="es">Cuatro workshops de assessment</span></h3>
+      <p><span class="en">Business drivers, stakeholder relations, test management and test profession: 60-minute designs that cover all 16 TPI NEXT key areas.</span><span class="es">Business drivers, relación con stakeholders, gestión de pruebas y oficio de probar: diseños de 60 minutos que cubren las 16 áreas clave de TPI NEXT.</span></p>
+      <a class="more" href="https://github.com/ckachury/liberating-structures-for-quality/blob/main/sessions/test-process-assessment-workshops.md"><span class="en">Read the designs →</span><span class="es">Ver los diseños →</span></a>
+    </article>
+  </div>
+</div></section>
+
+<section id="approach"><div class="wrap">
+  <h2><span class="en">How I work</span><span class="es">Cómo trabajo</span></h2>
+  <p class="sub"><span class="en">I trained as an anthropologist before I became a tester. I still start by understanding how people really work.</span><span class="es">Me formé como antropóloga antes de ser tester. Sigo empezando por entender cómo trabaja realmente la gente.</span></p>
+  <div class="steps">
+    <div class="step"><h3><span class="en">Listen</span><span class="es">Escuchar</span></h3><p><span class="en">Interviews and workshops where every role speaks, with rules that make honesty safe.</span><span class="es">Entrevistas y workshops donde todos los roles hablan, con reglas que hacen segura la honestidad.</span></p></div>
+    <div class="step"><h3><span class="en">Evidence</span><span class="es">Evidenciar</span></h3><p><span class="en">Every finding backed by at least two sources. Unknown is "not assessed", never "fine".</span><span class="es">Cada hallazgo respaldado por al menos dos fuentes. Lo desconocido está "sin evaluar", nunca "bien".</span></p></div>
+    <div class="step"><h3><span class="en">Prioritise</span><span class="es">Priorizar</span></h3><p><span class="en">Effort follows business risk: money, trust, data and legal exposure first.</span><span class="es">El esfuerzo sigue al riesgo del negocio: primero el dinero, la confianza, los datos y la exposición legal.</span></p></div>
+    <div class="step"><h3><span class="en">Enable</span><span class="es">Habilitar</span></h3><p><span class="en">Quick wins teams can own, and metrics that change decisions, not dashboards.</span><span class="es">Quick wins que los equipos pueden asumir, y métricas que cambian decisiones, no tableros.</span></p></div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <h2><span class="en">Experience</span><span class="es">Trayectoria</span></h2>
+  <ul class="timeline">
+    <li><span class="when">2026 –</span><div><b><span class="en">Quality consultant · Aliwen Global</span><span class="es">Consultora de calidad · Aliwen Global</span></b><span class="en">Test process assessments with TPI NEXT and improvement plans.</span><span class="es">Assessments de procesos de prueba con TPI NEXT y planes de mejora.</span></div></li>
+    <li><span class="when">2025 – 2026</span><div><b>QA Manager · Webdox CLM</b><span class="en">Led functional and automation QA teams; release decisions with Product Owners; acceptance criteria for AI features.</span><span class="es">Lideré equipos de QA funcional y de automatización; decisiones de release con Product Owners; criterios de aceptación para funcionalidades con IA.</span></div></li>
+    <li><span class="when">2023 – 2025</span><div><b>QA Manager · Healthatom</b><span class="en">Built the QA function from scratch in HealthTech: 60% fewer support tickets and defect leakage at 5% or less, with health regulations for Chile, Mexico and Colombia.</span><span class="es">Construí la función de QA desde cero en HealthTech: 60% menos tickets de soporte y defect leakage de 5% o menos, con requisitos regulatorios de salud de Chile, México y Colombia.</span></div></li>
+    <li><span class="when">2018 – 2023</span><div><b>Customer Success → QA Lead · Beetrack / DispatchTrack</b><span class="en">From the customer's side to quality: web and mobile testing, integrations, and a distributed team across Chile, Argentina and India.</span><span class="es">Del lado del cliente a la calidad: pruebas web y móvil, integraciones y un equipo distribuido entre Chile, Argentina e India.</span></div></li>
+  </ul>
+  <div class="creds">
+    <span>ISTQB® CTFL · 2022</span>
+    <span><span class="en">Master in IT &amp; Management · PUC Chile · thesis 2025</span><span class="es">Magíster en TI y Gestión · PUC Chile · tesis 2025</span></span>
+    <span><span class="en">Test Automation Diploma · Kibernum · 2021</span><span class="es">Diplomado en Automatización de Pruebas · Kibernum · 2021</span></span>
+    <span><span class="en">BA in Anthropology · Universidad Central de Venezuela</span><span class="es">Antropología · Universidad Central de Venezuela</span></span>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact">
+    <div>
+      <h2><span class="en">Let's talk about your quality</span><span class="es">Conversemos sobre su calidad</span></h2>
+      <p><span class="en">Santiago, Chile (GMT-3) · Spanish and English · Remote. A 20-minute call is usually enough to know whether I can help.</span><span class="es">Santiago, Chile (GMT-3) · Español e inglés · Remoto. Una llamada de 20 minutos suele bastar para saber si puedo ayudar.</span></p>
+    </div>
+    <div>
+      <a class="btn" href="https://www.linkedin.com/in/carla-achury-617b7536/">LinkedIn</a>
+      <a class="btn" href="mailto:ckachury@gmail.com">ckachury@gmail.com</a>
+      <a class="btn" href="https://github.com/ckachury">GitHub</a>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Carla Achury · <span class="en">Content shared under CC BY 4.0 unless stated otherwise.</span><span class="es">Contenido bajo CC BY 4.0 salvo indicación contraria.</span></div></footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btns=document.querySelectorAll('.lang button');
+  function set(l){root.lang=l;btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===l)});try{localStorage.setItem('lang',l)}catch(e){}}
+  var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  set(saved||((navigator.language||'en').slice(0,2)==='es'?'es':'en'));
+  btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.lang)})});
+})();
+</script>
+</body>
+</html>
